@@ -3,6 +3,7 @@ package br.edu.ifma.si.lbd.transportadora.test;
 import br.edu.ifma.si.lbd.transportadora.model.*;
 import br.edu.ifma.si.lbd.transportadora.model.enums.CategoriaFrete;
 import br.edu.ifma.si.lbd.transportadora.model.enums.TipoVeiculo;
+import br.edu.ifma.si.lbd.transportadora.service.FreteFiltro;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -27,6 +28,8 @@ public class Test {
         Veiculo veiculo = new Veiculo();
         Distancia distancia = new Distancia();
         Frete frete = new Frete();
+        FreteFiltro filtro = new FreteFiltro();
+        filtro.setNomeCliente("Silas Nazare Chagas");
 
         cliente.setNome("Silas Nazare Chagas");
 
